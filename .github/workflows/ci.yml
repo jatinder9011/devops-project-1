@@ -1,15 +1,18 @@
-name: CI Pipeline
-
-on:
-  push:
-    branches:
-      - main
-      - master
+name: CI
+on: [push]
 
 jobs:
-  test-job:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Print message
-        run: echo "CI pipeline is running"
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show current directory
+        run: pwd
+
+      - name: List project files
+        run: ls
+
+      - name: Check Python version
+        run: python3 --version
