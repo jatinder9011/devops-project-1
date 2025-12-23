@@ -28,5 +28,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/devops-app:latest .
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/devops-app:latest
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/devops-app:v2 .
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/devops-app:v2
