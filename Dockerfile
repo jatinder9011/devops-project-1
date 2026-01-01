@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app/ .
 
 ENV APP_ENV=dev
-ENV APP_NAME="My First DevOps App"
+ENV APP_NAME="My First D DevOps App"
 
 EXPOSE 5001
 
